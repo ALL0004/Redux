@@ -9,7 +9,8 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
+    animation: spin infinite 10s ease 6s;
+   
   }
 }
 
@@ -36,4 +37,11 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(36000deg); 
+      transform:rotate(36000deg); 
+  } 
 }
